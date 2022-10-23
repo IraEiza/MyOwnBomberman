@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(41, 37, 37);
+}
+#board {
+    background-image: url(../assets/images/background1.png);
+}
+td {
+    height: 20px;
+    width: 20px;
+}
+.soft-rock {
+    background-image: url(../assets/images/softBlock1.png);
+    background-size: contain;
+    background-position: center;
+}
+.hard-rock {
+    background-image: url(../assets/images/hardRock1.png);
+    background-size: contain;
+    background-position: center;
+}
+.boundary-up {
+    background-image: url(../assets/images/borderUp1.png);
+}
+.boundary-down {
+    background-image: url(../assets/images/borderDown1.png);
+}
+.boundary-left {
+    background-image: url(../assets/images/borderLeft1.png);
+}
+.boundary-right {
+    background-image: url(../assets/images/borderRight1.png);
+}
+.boundary-up-left {
+    background-image: url(../assets/images/borderUpLeft1.png);
+}
+.boundary-up-right {
+    background-image: url(../assets/images/borderUpRight1.png);
+}
+.boundary-down-left {
+    background-image: url(../assets/images/borderDownLeft1.png);
+}
+.boundary-down-right {
+    background-image: url(../assets/images/borderDownRight1.png);
+}
+.player {
+    background-image: url(../assets/images/bomberman.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
