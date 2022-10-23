@@ -1,5 +1,8 @@
 let cell = document.querySelectorAll('#row2');
 let player = new Player(3, 18);
+let enemy = new Enemy(6, 2, 1000, 1);
+let bomb = new Bomb();
+let bombs = []
 
 /*En el html hay que poner primero el maps.js*/
 var createBoard = function() {
@@ -37,6 +40,12 @@ var createBoard = function() {
     })
 
 }
+
+
 createBoard()
 player.showPlayer()
 player.movePlayer()
+enemy.showEnemy()
+enemy.moveEnemy()
+bomb.showBomb()
+bomb.removeBomb() // si se pone aquí se ejecuta al inicio del juego, hay que ponerlo cuando se pone la bomba

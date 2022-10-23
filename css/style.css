@@ -2,6 +2,7 @@ body {
     background-color: rgb(41, 37, 37);
 }
 #board {
+
     background-image: url(../assets/images/background1.png);
 }
 td {
@@ -42,9 +43,18 @@ td {
 .boundary-down-right {
     background-image: url(../assets/images/borderDownRight1.png);
 }
+
+.bomb {
+    background-image: url(../assets/images/bomb.gif);
+    background-color: red;
+}
 .player {
     background-image: url(../assets/images/bomberman.gif);
-    background-size: contain;
     background-repeat: no-repeat;
+    background-size: contain;
     background-position: center;
+}
+.enemy {
+    background-image: url(../assets/images/enemy1.png);
+    background-color: green;
 }

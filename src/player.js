@@ -5,11 +5,11 @@ function Player(x, y) {
     this.showPlayer = function() {
         let player = document.querySelector(`#row${this.y} #col${this.x}`);
         player.classList.add('player');
-    }
+    };
     this.removePlayer = function() {
         let player = document.querySelector(`#row${this.y} #col${this.x}`);
         player.classList.remove('player');
-    }
+    };
     this.checkBoundaries = function(direction) {
         boundaries = [
             'boundary-up', 
@@ -20,7 +20,8 @@ function Player(x, y) {
             'soft-rock',
             'soft-rock door',
             'enemy',
-            'player'
+            'player',
+            'bomb'
         ];
         switch (direction) {
             case 'w':
@@ -36,7 +37,7 @@ function Player(x, y) {
             let cellD = document.querySelector(`#row${this.y+1} #col${this.x}`);
             return boundaries.includes(cellD.getAttribute('class')) ? true : false;
         }
-    }
+    };
     this.movePlayer = function() {
         window.addEventListener('keydown', (button) => {
             switch (button.key) {
@@ -72,7 +73,7 @@ function Player(x, y) {
                         this.showPlayer()
                     }
                     break;
-            }   
+            }
         })
-    }
+    };
 }
